@@ -1,7 +1,7 @@
 # Maintainer: William Tang <galaxyking0419@gmail.com>
 
 pkgname=maya-arnold
-pkgver=4.2.1
+pkgver=4.2.3
 pkgrel=1
 pkgdesc='Autodesk Maya Arnold Renderer Plugin'
 arch=('x86_64')
@@ -12,12 +12,12 @@ optdepends=('maya-usd: Universal Scene Discription Support')
 
 DLAGENTS+=('manual::/usr/bin/echo \ \ Note: Please download the package manually from the official website')
 source=('manual://package.zip')
-sha256sums=('f5802a922d5960f2465963f9221e4377ea2daa70482db89076defa68ea478a39')
+sha256sums=('73cd879af2db55f424fce7ce80f958c026acb45a6be081818f4182bd79d12e2a')
 
 options=(!strip)
 
 prepare() {
-    sed -i 's|/jenkins/workspace/Arnold-MTOA_Build_LINUX_CENTOS73/MTOA_DEPLOY|/usr/autodesk/maya2022/plug-ins/arnold|g' mtoa.mod
+    sed -i 's|/home/go-agent/pipelines/MtoA-RC/material/mtoa/MTOA_DEPLOY|/usr/autodesk/maya2022/plug-ins/arnold|g' mtoa.mod
 }
 
 package() {
