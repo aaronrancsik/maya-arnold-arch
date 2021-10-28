@@ -1,7 +1,7 @@
 # Maintainer: William Tang <galaxyking0419@gmail.com>
 
 pkgname=maya-arnold
-pkgver=4.2.3
+pkgver=7.0.0
 pkgrel=1
 pkgdesc='Autodesk Maya Arnold Renderer Plugin'
 arch=('x86_64')
@@ -12,7 +12,7 @@ optdepends=('maya-usd: Universal Scene Discription Support')
 
 DLAGENTS+=('manual::/usr/bin/echo \ \ Note: Please download the package manually from the official website')
 source=('manual://package.zip')
-sha256sums=('73cd879af2db55f424fce7ce80f958c026acb45a6be081818f4182bd79d12e2a')
+sha256sums=('d78dda37f92d11ea63dc6df372ac621c3d9435a70c15621c10e92e26a0617202')
 
 options=(!strip)
 
